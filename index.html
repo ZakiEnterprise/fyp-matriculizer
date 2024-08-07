@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matriculizer</title>
+</head>
+<body>
+    <div class="back">
+        <form>
+            <h3>Student Matrics Card Information</h3>
+            <label>Full Name </label>
+            <input type="text" id="" placeholder="Enter Name">
+            <label>Registration Number </label>
+            <input type="text" id="regisnum" placeholder="Registration">
+            <label>IC Number </label>
+            <input type="number" id="icnum" placeholder="IC Number">
+            <label for="file" class="upload">Upload an image</label>
+            <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+        </form>
+
+        <button type="submit" id="preview">Preview</button>
+
+        <div class="container">
+            <div class="card" id="result">
+                <header id="head">
+                    <div class="camp">
+                        
+                    </div>
+                    <img src="images1png_1674494765-removebg-preview.png" id="logo" alt="">
+                </header>
+
+                <div class="content">
+                    <img src="" id="imgDisplay">
+                    <ul>
+                        <li id="regisnum"></li>
+                        <li id="name"></li>
+                        <li id="icnum"></li>
+                    </ul>
+
+                    <button id="down">download</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
